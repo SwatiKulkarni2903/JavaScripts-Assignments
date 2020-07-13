@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<h1 style="color:tomato;">Welcome to JavaScript !!</h1>
+	</head>
+
+	<body>
+		<p><h3>--- This is jvava script code to display current date and time ---</h3></p>
+		<script>
+			var time = new Date();
+			var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+			document.write("Today is : "+daylist[time.getDay()]);
+			
+			document.write("<br>");
+			
+			var hour = time.getHours();
+			var min = time.getMinutes();
+			var sec = time.getSeconds();
+			var pre = (hour >= 12)? " PM ":" AM ";
+			document.write("Currentt time : "+hour+pre+" : "+min+" : "+sec);
+		</script>
+	</body>
+</html>
